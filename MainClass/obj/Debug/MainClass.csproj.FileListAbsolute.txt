@@ -1,0 +1,9 @@
+C:\Users\pc\source\repos\posystem\MainClass\bin\Debug\MainClass.dll.config
+C:\Users\pc\source\repos\posystem\MainClass\bin\Debug\MainClass.dll
+C:\Users\pc\source\repos\posystem\MainClass\bin\Debug\MainClass.pdb
+C:\Users\pc\source\repos\posystem\MainClass\obj\Debug\MainClass.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\posystem\MainClass\obj\Debug\MainClass.Properties.Resources.resources
+C:\Users\pc\source\repos\posystem\MainClass\obj\Debug\MainClass.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\posystem\MainClass\obj\Debug\MainClass.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\posystem\MainClass\obj\Debug\MainClass.dll
+C:\Users\pc\source\repos\posystem\MainClass\obj\Debug\MainClass.pdb

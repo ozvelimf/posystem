@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEBE5122-2400-40B4-BFE6-060E61511184}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>posystem</RootNamespace>
+    <AssemblyName>posystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fommain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fommain.Designer.cs">
+      <DependentUpon>fommain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlogin.Designer.cs">
+      <DependentUpon>formlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formregister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formregister.Designer.cs">
+      <DependentUpon>formregister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="Model\formNewCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formNewCart.Designer.cs">
+      <DependentUpon>formNewCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\formNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formNewUser.Designer.cs">
+      <DependentUpon>formNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\formPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\formPayment.Designer.cs">
+      <DependentUpon>formPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\fromNewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\fromNewProduct.Designer.cs">
+      <DependentUpon>fromNewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample.Designer.cs">
+      <DependentUpon>Sample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\formcart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formcart.Designer.cs">
+      <DependentUpon>formcart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\formDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formDashboard.Designer.cs">
+      <DependentUpon>formDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\formOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formOrders.Designer.cs">
+      <DependentUpon>formOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\formproducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formproducts.Designer.cs">
+      <DependentUpon>formproducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\formUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formUsers.Designer.cs">
+      <DependentUpon>formUsers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fommain.resx">
+      <DependentUpon>fommain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlogin.resx">
+      <DependentUpon>formlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formregister.resx">
+      <DependentUpon>formregister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formNewCart.resx">
+      <DependentUpon>formNewCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formNewUser.resx">
+      <DependentUpon>formNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\formPayment.resx">
+      <DependentUpon>formPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\fromNewProduct.resx">
+      <DependentUpon>fromNewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sample.resx">
+      <DependentUpon>Sample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formcart.resx">
+      <DependentUpon>formcart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formOrders.resx">
+      <DependentUpon>formOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formproducts.resx">
+      <DependentUpon>formproducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formUsers.resx">
+      <DependentUpon>formUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashless-payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trash-26.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
